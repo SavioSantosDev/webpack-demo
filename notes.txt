@@ -1,0 +1,39 @@
+Iniciar aplicativos node.js
+
+
+Instalar o webpack como dependencia de desenvolvimento
+webpack webpack-cli SAVE-DEV
+
+
+Organizar as estruturas de pastas
+    /dist
+        index.html
+    /src
+        index.js
+
+
+Instalar o loadash e importa-lo no index.js
+    loadash --save
+
+
+Para criar o main.js em /dist
+    npm webpack
+
+
+Ao criar o webpack.config.js. Para roda-lo 
+    npx webpack --config webpack.config.js
+
+    - Se o webpack.config.js está presente ele irá ser executado como padrão
+    - o --config será util em casos de vários arquivos de configuração.
+
+
+Para importar o css no index.js Instalar
+    npm install --save-dev style-loader css-loader
+Para outros arquivos, imagens, icones e illustrações
+    npm install --save-dev file-loader
+
+Para referenciar os entry. Atualizar o webpack.config.js
+    npm install --save-dev html-webpack-plugin
+
+Para limpar a pasta /dist antes do build
+    npm install --save-dev clean-webpack-plugin
