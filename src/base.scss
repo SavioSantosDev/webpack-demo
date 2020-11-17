@@ -1,0 +1,6 @@
+$backgroundColor: pink;
+body {
+  background-color: $backgroundColor;
+}
+
+@import './assets/stylesheets/typography.scss';
